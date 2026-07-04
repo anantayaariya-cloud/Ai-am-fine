@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Alzheimer's Disease Screening</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>AI Am Fine</h1>
+        <p>
+            Development of an Artificial Intelligence Model for
+            Early-Stage Alzheimer's Disease Screening through
+            Speech Pattern Analysis
+        </p>
+    </header>
+
+    <main class="container">
+        <div class="card">
+            <h2>Speech Recording</h2>
+
+            <p class="description">
+                Please read the paragraph below clearly and naturally.
+                The AI will analyze speech characteristics for
+                demonstration purposes. อ่านย่อหน้าด้านล่างนี้ให้ชัดเจนและเป็นธรรมชาติ เลือกภาษาไทยหรืออังกฤษก็ได้ AI จะวิเคราะห์ลักษณะการพูดเพื่อวัตถุประสงค์ในการสาธิต
+            </p>
+
+            <div class="reading-box">
+                <h3>Reading Passage</h3>
+                <p>
+                    "Today is a beautiful day. I enjoy spending time
+                    with my family and friends. Every morning I wake up,
+                    have breakfast, and go for a walk in the park.
+                    กินข้าวรึยัง อยากกินอะไร ไปไหนไหม กลับกี่โมง ไปเที่ยวต่างประเทศวันไหน วันนี้อยากกินอะไรเป็นพิเศษไหม วันนี้ไปทำงานรึป่าว
+                </p>
+            </div>
+
+            <div class="timer">
+                <span id="timer">00:20</span>
+            </div>
+
+            <p id="status" style="font-weight: bold; text-align: center; height: 24px;"></p>
+
+            <div class="buttons">
+                <button id="start">🎤 Start Recording</button>  
+                <button id="stop" disabled> ⏹ Stop Recording </button>
+            </div>
+
+            <audio id="audioPlayback" controls style="display: block; margin: 20px auto;"></audio>
+
+            <div class="analyze-section" style="text-align: center;">
+                <button id="analyze" disabled>🧠 Analyze Speech</button>
+            </div>
+
+            <div id="result" style="margin-top: 20px;"></div>
+
+        </div>
+    </main>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
